@@ -15,7 +15,27 @@ backend / devops · сети, автоматизация, Python, Go
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
+
+**[main_argbot](https://github.com/Rypleshhh/main_argbot)**
+
+Платная версия бота: Mini App, HTTPS через DuckDNS, targeted-скан.
+
+`Python` `FastAPI` `Caddy`
+
+</td>
+<td width="50%" valign="top">
+
+**[GreenCity](https://github.com/Artem-Kornilov-pro/GreenCity)** · hackathon (ЛЦТ), в команде
+
+Автопроектирование озеленения по DXF-чертежам: генератор расстановки по нормам СНиП, правка плана текстом через LLM. Мой вклад — backend-логика и Docker-инфраструктура.
+
+`Python` `FastAPI` `Docker`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 **[dorm-vpn-bypass](https://github.com/Rypleshhh/dorm-vpn-bypass)**
 
@@ -24,22 +44,13 @@ backend / devops · сети, автоматизация, Python, Go
 `OpenWrt` `Xray-core` `nftables`
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 **[sberazs_bot](https://github.com/Rypleshhh/sberazs_bot)**
 
 Telegram-бот мониторинга АЗС, распределённая архитектура через NAT.
 
 `Python` `aiogram` `Docker`
-
-</td>
-<td width="33%" valign="top">
-
-**[main_argbot](https://github.com/Rypleshhh/main_argbot)**
-
-Платная версия бота: Mini App, HTTPS через DuckDNS, targeted-скан.
-
-`Python` `FastAPI` `Caddy`
 
 </td>
 </tr>
