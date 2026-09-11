@@ -7,7 +7,7 @@
 [![Linux](https://img.shields.io/badge/-Linux-0D1117?style=flat-square&logo=linux&logoColor=FCC624)](https://github.com/Rypleshhh)
 [![OpenWrt](https://img.shields.io/badge/-OpenWrt-0D1117?style=flat-square&logo=openwrt&logoColor=00B5E2)](https://github.com/Rypleshhh)
 
-[![followers](https://img.shields.io/github/followers/Rypleshhh?style=flat-square&color=0D1117&labelColor=0D1117)](https://github.com/Rypleshhh?tab=followers)
+
 
 backend / devops · сети, автоматизация, Python, Go
 
@@ -55,6 +55,8 @@ Telegram-бот мониторинга АЗС, распределённая ар
 </td>
 </tr>
 </table>
+
+[![followers](https://img.shields.io/github/followers/Rypleshhh?style=flat-square&color=0D1117&labelColor=0D1117)](https://github.com/Rypleshhh?tab=followers)
 
 #### contacts
 
