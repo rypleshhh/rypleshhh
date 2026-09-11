@@ -1,4 +1,4 @@
-# im Rypleshhh
+# im rypleshhh
 
 [![Python](https://img.shields.io/badge/-Python-0D1117?style=flat-square&logo=python&logoColor=3776AB)](https://github.com/Rypleshhh)
 [![Go](https://img.shields.io/badge/-Go-0D1117?style=flat-square&logo=go&logoColor=00ADD8)](https://github.com/Rypleshhh)
@@ -47,5 +47,5 @@ Telegram-бот мониторинга АЗС, распределённая ар
 
 #### contacts
 
-telegram: [@your_telegram](https://t.me/your_telegram)
-email: your@email.com
+telegram: [@ryplesh](https://t.me/ryplesh)
+email: rypleshhh@gmail.com
