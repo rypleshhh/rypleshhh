@@ -26,7 +26,7 @@ backend / devops · сети, автоматизация, Python, Go
 </td>
 <td width="50%" valign="top">
 
-**[GreenCity](https://github.com/Artem-Kornilov-pro/GreenCity)** · hackathon (ЛЦТ), в команде
+**[GreenCity]** · hackathon (ЛЦТ), в команде
 
 Автопроектирование озеленения по DXF-чертежам: генератор расстановки по нормам СНиП, правка плана текстом через LLM. Мой вклад — backend-логика и мат. моделинг
 `Python` `FastAPI` `Docker`
