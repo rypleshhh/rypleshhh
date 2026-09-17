@@ -56,7 +56,7 @@ Telegram-бот мониторинга АЗС, распределённая ар
 </tr>
 </table>
 
-[![followers](https://img.shields.io/github/followers/Rypleshhh?style=flat-square&color=0D1117&labelColor=0D1117)](https://github.com/Rypleshhh?tab=followers)
+[![followers](https://img.shields.io/github/followers/rypleshhh?style=flat-square&color=0D1117&labelColor=0D1117)](https://github.com/Rypleshhh?tab=followers)
 
 #### contacts
 
