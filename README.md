@@ -26,10 +26,11 @@ backend / devops · сети, автоматизация, Python, Go
 </td>
 <td width="50%" valign="top">
 
-**[GreenCity]** · hackathon (ЛЦТ), в команде
+**[spliceRTC](https://github.com/rypleshhh/splicertc)** 
 
-Автопроектирование озеленения по DXF-чертежам: генератор расстановки по нормам СНиП, правка плана текстом через LLM. Мой вклад — backend-логика и мат. моделинг
-`Python` `FastAPI` `Docker`
+TCP/TLS-туннель на Go для обхода блокировки нестандартных портов: VPN-режим и спец каналом для игрового UDP с TTL-дропом и мультипас-дублированием.
+
+`Go` `TLS` `TUN/TAP` `Docker`
 
 </td>
 </tr>
