@@ -61,4 +61,4 @@ Telegram-бот мониторинга АЗС, распределённая ар
 #### contacts
 
 telegram: [@ryplesh](https://t.me/ryplesh)
-email: rypleshhh@gmail.com
+email: ryplesh@tuta.io
