@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/hashrain.gif" width="100%"/></p>
+<p align="center"><img src="assets/netlap.gif" width="100%"/></p>
 
 backend / devops · сети, автоматизация, Python, Go, Rust
 
