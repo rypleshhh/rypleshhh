@@ -14,6 +14,7 @@ backend / devops · сети, автоматизация, Python, Go, Rust
   <img src="https://skillicons.dev/icons?i=bash&theme=dark" height="48"/>
   <img src="assets/openwrt-dark.svg" height="48" title="OpenWrt"/>
 </p>
+
 #### projects
 
 <table>
