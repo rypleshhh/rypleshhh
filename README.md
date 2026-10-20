@@ -4,17 +4,16 @@ backend / devops · сети, автоматизация, Python, Go, Rust
 
 
 #### stack
-
-[![Python](https://img.shields.io/badge/-Python-0D1117?style=flat-square&logo=python&logoColor=3776AB)](https://github.com/Rypleshhh)
-[![Go](https://img.shields.io/badge/-Go-0D1117?style=flat-square&logo=go&logoColor=00ADD8)](https://github.com/Rypleshhh)
-[![Rust](https://img.shields.io/badge/-Rust-0D1117?style=flat-square&logo=rust&logoColor=DEA584)](https://github.com/Rypleshhh)
-[![Bash](https://img.shields.io/badge/-Bash-0D1117?style=flat-square&logo=gnu-bash&logoColor=4EAA25)](https://github.com/Rypleshhh)
-[![Flutter](https://img.shields.io/badge/-Flutter-0D1117?style=flat-square&logo=flutter&logoColor=02569B)](https://github.com/Rypleshhh)
-
-[![Docker](https://img.shields.io/badge/-Docker-0D1117?style=flat-square&logo=docker&logoColor=2496ED)](https://github.com/Rypleshhh)
-[![Linux](https://img.shields.io/badge/-Linux-0D1117?style=flat-square&logo=linux&logoColor=FCC624)](https://github.com/Rypleshhh)
-[![OpenWrt](https://img.shields.io/badge/-OpenWrt-0D1117?style=flat-square&logo=openwrt&logoColor=00B5E2)](https://github.com/Rypleshhh)
-
+<p>
+  <img src="https://skillicons.dev/icons?i=go" height="48"/>
+  <img src="https://skillicons.dev/icons?i=rust" height="48"/>
+  <img src="https://skillicons.dev/icons?i=py&theme=dark" height="48"/>
+  <img src="https://skillicons.dev/icons?i=flutter&theme=dark" height="48"/>
+  <img src="https://skillicons.dev/icons?i=docker" height="48"/>
+  <img src="https://skillicons.dev/icons?i=linux&theme=dark" height="48"/>
+  <img src="https://skillicons.dev/icons?i=bash&theme=dark" height="48"/>
+  <img src="assets/openwrt-dark.svg" height="48" title="OpenWrt"/>
+</p>
 #### projects
 
 <table>
