@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/netlap.svg" width="100%"/></p>
+<p align="center"><img src="assets/nura.svg" width="100%"/></p>
 <p align="right"><sub>tunnel shape: © OpenStreetMap contributors, ODbL</sub></p>
 
 
