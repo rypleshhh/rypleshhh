@@ -1,10 +1,6 @@
-<p align="center"><img src="assets/nura.svg" width="100%"/></p>
-<p align="right"><sub>tunnel shape: © OpenStreetMap contributors, ODbL</sub></p>
+<p align="center"><img src="assets/hashrain.svg" width="100%"/></p>
 
-
-backend / devops · сети, автоматизация, Python, Go, Rust
-
-
+### backend / devops · сети, автоматизация, Python, Go, Rust
 #### stack
 <p>
   <img src="https://skillicons.dev/icons?i=go" height="48"/>
