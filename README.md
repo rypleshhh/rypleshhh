@@ -58,7 +58,7 @@ Telegram-бот мониторинга АЗС с платным доступом
 </tr>
 </table>
 
-также: [dorm-vpn-bypass](https://github.com/rypleshhh/dorm-vpn-bypass) <img src="https://img.shields.io/github/stars/rypleshhh/dorm-vpn-bypass?style=flat-square&label=%E2%98%85&color=0D1117" align="absmiddle"/> — обход DPI-блокировки UDP через VLESS+Reality на OpenWrt-роутере
+также: [dorm-vpn-bypass](https://github.com/rypleshhh/dorm-vpn-bypass)  — обход DPI-блокировки UDP через VLESS+Reality и Hysteria2 через тестирование при помощи [spliceRTC](https://github.com/rypleshhh/splicertc) на OpenWrt-роутере
 
 #### contacts
 
