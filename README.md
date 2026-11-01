@@ -39,7 +39,7 @@ TCP/TLS-туннель с нуля: VPN-режим и отдельный кан�
 <tr>
 <td width="50%" valign="top">
 
-**[GreenCity](https://github.com/Artem-Kornilov-pro/GreenCity)** · ЛЦТ 2026, команда «Вороны»
+**[GreenCity](https://github.com/Artem-Kornilov-pro/GreenCity)** · ФИНАЛИСТЫ ЛЦТ 2026, команда «Вороны»
 
 Автопроектирование озеленения по DXF-чертежам. На мне DevOps, сеть и производительность.
 
