@@ -37,6 +37,7 @@ FONT_REG = "fonts/JetBrainsMono-Regular.ttf"
 OUT = "header.svg"
 SEED = 7
 SUB_SIZE = 20
+SHIFT_X = -40                  # сдвиг подписи и строк вместе (визуальный центр), px
 SUB_X = 120                    # левый край «>», px
 SUB_Y = 356                    # базовая линия строк, px (под петлёй y)
 LINE_TIME = 3.4                 # секунд на надпись
@@ -176,11 +177,13 @@ stroke-dasharray:1 2;stroke-dashoffset:0;animation:draw ease-in-out backwards}}
   {"".join(defs)}
 </defs>
 <rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" rx="11.5" fill="{BG}" stroke="{BORDER}"/>
+<g transform="translate({SHIFT_X} 0)">
 <g class="sig" filter="url(#glow)">
 {"".join(sig_d)}
 </g>
 <g class="sub">
 {sublines(rng, upm, adv)}
+</g>
 </g>
 </svg>
 """
