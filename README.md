@@ -4,13 +4,17 @@
 #### stack
 <p>
   <img src="https://skillicons.dev/icons?i=go" height="48"/>
-  <img src="https://skillicons.dev/icons?i=rust" height="48"/>
   <img src="https://skillicons.dev/icons?i=py&theme=dark" height="48"/>
-  <img src="https://skillicons.dev/icons?i=flutter&theme=dark" height="48"/>
+  <img src="https://skillicons.dev/icons?i=rust" height="48"/>
+  <img src="https://skillicons.dev/icons?i=postgres" height="48"/>
+  <img src="https://skillicons.dev/icons?i=nginx" height="48"/>
+  <img src="https://skillicons.dev/icons?i=redis" height="48"/>
+  <img src="https://skillicons.dev/icons?i=kafka" height="48"/>
   <img src="https://skillicons.dev/icons?i=docker" height="48"/>
   <img src="https://skillicons.dev/icons?i=linux&theme=dark" height="48"/>
   <img src="https://skillicons.dev/icons?i=bash&theme=dark" height="48"/>
   <img src="assets/openwrt-dark.svg" height="48" title="OpenWrt"/>
+  <img src="https://skillicons.dev/icons?i=flutter&theme=dark" height="48"/>
 </p>
 
 #### projects
