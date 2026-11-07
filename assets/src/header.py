@@ -21,9 +21,10 @@ LINES = [
     "bypassing DPI on OpenWrt",
     "Rust + Flutter music client",
     "autocar analysis · Go + Postgres + ML",
-]
+]   
 W = 830
-SIG_H = 430                     # высота подписи, px
+SIG_SCALE = 1.25                # px на единицу signature.json (размер букв не зависит от росчерка)
+SIG_BASE = 234                  # база строчных в координатах signature.json
 SIG_TOP = 20
 BG = "#000000"
 BORDER = "#30363d"
@@ -39,11 +40,11 @@ SEED = 7
 SUB_SIZE = 20
 SHIFT_X = -40                  # сдвиг подписи и строк вместе (визуальный центр), px
 SUB_X = 120                    # левый край «>», px
-SUB_Y = 356                    # базовая линия строк, px (под петлёй y)
+SUB_DY = 131                   # базовая линия строк ниже базы букв, px (под петлёй y)
 LINE_TIME = 3.4                 # секунд на надпись
 FRAME = 0.05                    # шаг расшифровки
 DECODE, DISSOLVE = 10, 7        # кадров
-SCRAMBLE = "&#%@$"              # символы расшифровки
+SCRAMBLE = "&#%#$"              # символы расшифровки
 # -------------------------------------------
 
 
@@ -76,13 +77,13 @@ def smooth(pts: list) -> str:
     return d
 
 
-def signature(path: str, top: float) -> tuple[list[tuple[str, float]], float]:
-    """-> [(d, длина)], нижняя граница."""
+def signature(path: str, top: float) -> tuple[list[tuple[str, float]], float, float]:
+    """-> [(d, длина)], нижняя граница, y базы букв."""
     with open(path) as f:
         strokes = json.load(f)
     xs = [p[0] for s in strokes for p in s]
     ys = [p[1] for s in strokes for p in s]
-    k = SIG_H / (max(ys) - min(ys))
+    k = SIG_SCALE
     ox = (W - (max(xs) - min(xs)) * k) / 2 - min(xs) * k
     oy = top - min(ys) * k
     strokes = [[(x * k + ox, y * k + oy) for x, y in s] for s in strokes]
@@ -90,7 +91,7 @@ def signature(path: str, top: float) -> tuple[list[tuple[str, float]], float]:
     for s in strokes:  # порядок файла = порядок рисования
         length = sum(((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5 for a, b in zip(s, s[1:]))
         out.append((smooth(s), length))
-    return out, top + SIG_H
+    return out, top + (max(ys) - min(ys)) * k, SIG_BASE * k + oy
 
 
 def scramble(text: str, progress: float, rng: random.Random) -> str:
@@ -102,14 +103,14 @@ def gid(ch: str, bold: bool = False) -> str:
     return f"{'b' if bold else 'r'}{ord(ch):x}"
 
 
-def sublines(rng: random.Random, upm: int, adv: int) -> str:
+def sublines(rng: random.Random, upm: int, adv: int, sub_y: float) -> str:
     """Кадры расшифровки — группы <use> глифов, видимость через SMIL discrete."""
     s = SUB_SIZE / upm
     cw = adv * s
     cycle = LINE_TIME * len(LINES)
     kt = lambda t: f"{min(max(t, 0) / cycle, 1):.6f}"
     dur = f'dur="{cycle:.2f}s" calcMode="discrete" repeatCount="indefinite"'
-    place = lambda x: f'transform="translate({x:.2f} {SUB_Y}) scale({s:.5f} {-s:.5f})"'
+    place = lambda x: f'transform="translate({x:.2f} {sub_y:.1f}) scale({s:.5f} {-s:.5f})"'
     els = []
 
     def frame(text: str, x: float, t0: float, t1: float) -> None:
@@ -140,8 +141,9 @@ def sublines(rng: random.Random, upm: int, adv: int) -> str:
 
 def build(accent: str, sub_color: str, glyphs_reg=None, glyphs_bold=None) -> str:
     rng = random.Random(SEED)
-    strokes, sig_bottom = signature(SIGNATURE, SIG_TOP)
-    h = round(max(sig_bottom, SUB_Y + 8) + 22)
+    strokes, sig_bottom, base_y = signature(SIGNATURE, SIG_TOP)
+    sub_y = base_y + SUB_DY
+    h = round(max(sig_bottom, sub_y + 8) + 22)
 
     chars = "".join(LINES) + SCRAMBLE + "_"
     reg, upm, adv = glyphs_reg or load_glyphs(FONT_REG, chars)
@@ -182,7 +184,7 @@ stroke-dasharray:1 2;stroke-dashoffset:0;animation:draw ease-in-out backwards}}
 {"".join(sig_d)}
 </g>
 <g class="sub">
-{sublines(rng, upm, adv)}
+{sublines(rng, upm, adv, sub_y)}
 </g>
 </g>
 </svg>
