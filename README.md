@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/header.svg" width="100%"/></p>
 
-### backend / devops · сети, автоматизация 
+### backend / devops / ML · сети, автоматизация 
 #### stack
 <p>
   <img src="https://skillicons.dev/icons?i=go" height="48"/>
